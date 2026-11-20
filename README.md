@@ -43,7 +43,7 @@ Full instructions (including how to restore): [see the hub page](https://github.
 The submod follows the same philosophy as the other JN games: you have to earn it.
 
 - Step ; What happens ; When 
----;---;---
+- ---;---;---
 - **1. Introduction** ; A one-time greeting at game launch, where Natsuki is found practicing chess on her own. ; **Snap and Blackjack unlocked**, and **at least 30 days** since your very first visit to the game.
 - **2. The topic** ; **"Do you want to play chess?"** appears in the **Games** category of the talk menu (needs at least **Happy** affinity). ; After the introduction.
 - **3. Beginner level** ; The only level at the start. It is chosen automatically. ; Right away.
@@ -63,12 +63,12 @@ The submod follows the same philosophy as the other JN games: you have to earn i
 6. Press **Play** to confirm, or **Cancel** to start over.
 7. Natsuki thinks, answers, and comments.
 
-Button ; What it does
----;---
-**Play** ; Confirms the move you are previewing.
-**Cancel** ; Forgets the selected piece and the previewed move.
-**Pause / Resume** ; Hides the board and stops the game. Natsuki notices and waits.
-**Forfeit** ; Gives up the game (Natsuki asks you to confirm, in her own way).
+- Button ; What it does
+- ---;---
+- **Play** ; Confirms the move you are previewing.
+- **Cancel** ; Forgets the selected piece and the previewed move.
+- **Pause / Resume** ; Hides the board and stops the game. Natsuki notices and waits.
+- **Forfeit** ; Gives up the game (Natsuki asks you to confirm, in her own way).
 
 ### Rules in short
 
@@ -78,11 +78,11 @@ Button ; What it does
 
 ### Natsuki's levels
 
-Level ; How she plays
----;---
-**Beginner** ; Plays quickly and carelessly. Prefers captures, and sometimes leaves pieces hanging (she will deny it).
-**Intermediate** ; Looks one move ahead, with some randomness.
-**Expert** ; Looks two moves ahead and plays much more carefully.
+- Level ; How she plays
+- ---;---
+- **Beginner** ; Plays quickly and carelessly. Prefers captures, and sometimes leaves pieces hanging (she will deny it).
+- **Intermediate** ; Looks one move ahead, with some randomness.
+- **Expert** ; Looks two moves ahead and plays much more carefully.
 
 > She is a small, simple chess engine, not a grandmaster. The goal is a fun game with a lot of personality.
 
@@ -104,17 +104,17 @@ Level ; How she plays
 
 **Images**
 
-File ; Size ; Used for
----;---;---
-`board_white.png` ; 474 × 474 px ; The board on the right when you play **white** (white at the bottom).
-`board_black.png` ; 474 × 474 px ; The board on the right when you play **black** (black at the bottom).
-`board.png` ; 474 × 474 px ; Fallback board for both sides, if the two files above are missing.
-`chess_board_desk_white.png` ; 1280 × 740 px ; The board lying on the table when you play white.
-`chess_board_desk_black.png` ; 1280 × 740 px ; The board lying on the table when you play black.
-`chess_board_desk.png` ; 1280 × 740 px ; Fallback table image for both sides.
-`wK.png`, `wQ.png`, `wR.png`, `wB.png`, `wN.png`, `wP.png` ; 56 × 56 px ; White pieces (king, queen, rook, bishop, knight, pawn).
-`bK.png`, `bQ.png`, `bR.png`, `bB.png`, `bN.png`, `bP.png` ; 56 × 56 px ; Black pieces.
-`chess_highlight.png` ; 56 × 56 px ; White rounded square, recolored by the submod for the highlights.
+- File ; Size ; Used for
+- ---;---;---
+- `board_white.png` ; 474 × 474 px ; The board on the right when you play **white** (white at the bottom).
+- `board_black.png` ; 474 × 474 px ; The board on the right when you play **black** (black at the bottom).
+- `board.png` ; 474 × 474 px ; Fallback board for both sides, if the two files above are missing.
+- `chess_board_desk_white.png` ; 1280 × 740 px ; The board lying on the table when you play white.
+- `chess_board_desk_black.png` ; 1280 × 740 px ; The board lying on the table when you play black.
+- `chess_board_desk.png` ; 1280 × 740 px ; Fallback table image for both sides.
+- `wK.png`, `wQ.png`, `wR.png`, `wB.png`, `wN.png`, `wP.png` ; 56 × 56 px ; White pieces (king, queen, rook, bishop, knight, pawn).
+- `bK.png`, `bQ.png`, `bR.png`, `bB.png`, `bN.png`, `bP.png` ; 56 × 56 px ; Black pieces.
+- `chess_highlight.png` ; 56 × 56 px ; White rounded square, recolored by the submod for the highlights.
 
 - The **board** is 474 × 474 px: an 8 × 8 grid of 56 px squares (448 px) with a **13 px frame** all around. The top-left square of the grid is a light square.
 - The **table image** has the size of the whole screen area used by JN's desk items (1280 × 740 px). Transparent background, the board drawn at the center of the table. It is drawn in front of Natsuki and the table, and it follows her when she slides to the left.
@@ -123,7 +123,7 @@ File ; Size ; Used for
 
 **Sounds** (all optional, `.ogg`)
 
-File ; When
+- File ; When
 ---;---
 `chess_pieces_setup.ogg` ; The pieces are placed on the board (black screen).
 `chess_piece_grab.ogg` ; You grab a piece.
@@ -147,20 +147,20 @@ Close the game, delete `Chess_submod.rpy` from the submods folder and the `chess
 
 Open `Chess_submod.rpy`: the settings are at the top of the file, each with a comment. Some of the most useful ones:
 
-Setting ; What it changes
----;---
-`CHESS_SQ` ; Size of a square, in pixels (default `56`). Redraw the pieces at the same size.
-`CHESS_FRAME` ; Thickness of the board frame (default `13`).
-`CHESS_COL_SELECTED`, `CHESS_COL_TARGET`, `CHESS_COL_PENDING`, `CHESS_COL_CHECK` ; Highlight colors: selected piece, possible squares, previewed move, king in check.
-`CHESS_COL_LAST`, `CHESS_COL_LAST_NATSUKI` ; Color of the last move, yours and Natsuki's.
-`CHESS_HL_ALPHA` ; Opacity of the highlights (`0.75` by default).
-`CHESS_BUTTON_W` ; Width of the buttons under the board (default `200`).
-`CHESS_HOVER_ZOOM`, `CHESS_GRAB_ZOOM` ; How much a piece grows when hovered / grabbed.
-`CHESS_WOBBLE_ANGLE`, `CHESS_WOBBLE_TIME`, `CHESS_WOBBLE_PIVOT` ; The swing of a grabbed piece, like a chandelier.
-`CHESS_PAUSE_IDLE_TIMES` ; When Natsuki comments while you are paused. Use `()` to keep her silent.
-`CHESS_INTRO_REQUIRED_DAYS` ; Days since your first visit before the introduction (default `30`).
-`CHESS_LEVELS_REQUIRED_DAYS` ; Days after the introduction before Intermediate and Expert unlock (default `30`).
-`CHESS_CURSOR_IMG`, `CHESS_CURSOR_HOTSPOT` ; The hand cursor shown over the board.
+- Setting ; What it changes
+- ---;---
+- `CHESS_SQ` ; Size of a square, in pixels (default `56`). Redraw the pieces at the same size.
+- `CHESS_FRAME` ; Thickness of the board frame (default `13`).
+- `CHESS_COL_SELECTED`, `CHESS_COL_TARGET`, `CHESS_COL_PENDING`, `CHESS_COL_CHECK` ; Highlight colors: selected piece, possible squares, previewed move, king in check.
+- `CHESS_COL_LAST`, `CHESS_COL_LAST_NATSUKI` ; Color of the last move, yours and Natsuki's.
+- `CHESS_HL_ALPHA` ; Opacity of the highlights (`0.75` by default).
+- `CHESS_BUTTON_W` ; Width of the buttons under the board (default `200`).
+- `CHESS_HOVER_ZOOM`, `CHESS_GRAB_ZOOM` ; How much a piece grows when hovered / grabbed.
+- `CHESS_WOBBLE_ANGLE`, `CHESS_WOBBLE_TIME`, `CHESS_WOBBLE_PIVOT` ; The swing of a grabbed piece, like a chandelier.
+- `CHESS_PAUSE_IDLE_TIMES` ; When Natsuki comments while you are paused. Use `()` to keep her silent.
+- `CHESS_INTRO_REQUIRED_DAYS` ; Days since your first visit before the introduction (default `30`).
+- `CHESS_LEVELS_REQUIRED_DAYS` ; Days after the introduction before Intermediate and Expert unlock (default `30`).
+- `CHESS_CURSOR_IMG`, `CHESS_CURSOR_HOTSPOT` ; The hand cursor shown over the board.
 
 ### Testing the introduction and the levels
 
@@ -171,15 +171,15 @@ Setting ; What it changes
 
 ## What is saved in your persistent file
 
-Value ; Purpose
----;---
-`_jn_chess_intro_seen`, `_jn_chess_intro_pending`, `_jn_chess_intro_date` ; The introduction has been (or is about to be) played, and when.
-`_jn_chess_levels_announced` ; Natsuki already announced the new levels.
-`_jn_chess_rules_offered`, `_jn_chess_explanation_given` ; The rules / controls have already been offered or explained.
-`_jn_chess_memory` ; Games started and completed, wins, losses, draws, forfeits, streaks and the last result.
-`_jn_chess_greeting_database` ; The registration of the introduction greeting.
+- Value ; Purpose
+- ---;---
+- `_jn_chess_intro_seen`, `_jn_chess_intro_pending`, `_jn_chess_intro_date` ; The introduction has been (or is about to be) played, and when.
+- `_jn_chess_levels_announced` ; Natsuki already announced the new levels.
+- `_jn_chess_rules_offered`, `_jn_chess_explanation_given` ; The rules / controls have already been offered or explained.
+- `_jn_chess_memory` ; Games started and completed, wins, losses, draws, forfeits, streaks and the last result.
+- `_jn_chess_greeting_database` ; The registration of the introduction greeting.
 
----
+- ---
 
 ## How it works (for submod makers)
 
