@@ -42,12 +42,12 @@ Full instructions (including how to restore): [see the hub page](https://github.
 
 The submod follows the same philosophy as the other JN games: you have to earn it.
 
-Step ; What happens ; When 
+- Step ; What happens ; When 
 ---;---;---
-**1. Introduction** ; A one-time greeting at game launch, where Natsuki is found practicing chess on her own. ; **Snap and Blackjack unlocked**, and **at least 30 days** since your very first visit to the game.
-**2. The topic** ; **"Do you want to play chess?"** appears in the **Games** category of the talk menu (needs at least **Happy** affinity). ; After the introduction.
-**3. Beginner level** ; The only level at the start. It is chosen automatically. ; Right away.
-**4. Intermediate and Expert** ; Natsuki announces that she has improved, and the level menu appears. ; **30 days** after the introduction.
+- **1. Introduction** ; A one-time greeting at game launch, where Natsuki is found practicing chess on her own. ; **Snap and Blackjack unlocked**, and **at least 30 days** since your very first visit to the game.
+- **2. The topic** ; **"Do you want to play chess?"** appears in the **Games** category of the talk menu (needs at least **Happy** affinity). ; After the introduction.
+- **3. Beginner level** ; The only level at the start. It is chosen automatically. ; Right away.
+- **4. Intermediate and Expert** ; Natsuki announces that she has improved, and the level menu appears. ; **30 days** after the introduction.
 
 > JN does not record *when* Snap and Blackjack were unlocked, so the 30 days are counted from your first visit to the game. If you have been playing for a while already, you get the introduction on your next launch once both games are unlocked.
 
