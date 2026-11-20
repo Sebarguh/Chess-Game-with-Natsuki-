@@ -1,5 +1,9 @@
 # Chess for Just Natsuki
 
+<p align="center">
+  <img src="media/chess-preview1.gif" alt="Chess gameplay preview" width="100%">
+</p>
+
 Adds a **full game of chess** to Just Natsuki. Natsuki found an old chess set in the closet, practices alone until you walk in on her, and eventually challenges you to a game. She watches the board, **reacts to your moves** (captures, checks, blunders, comebacks...), gets better over time, and remembers how your games went.
 
 > **Unofficial fan-made submod, in BETA.** Not affiliated with or supported by the Just Natsuki developers. Please report problems [here](https://github.com/Sebarguh/Chess-Game-with-Natsuki-/issues), not to the JN Team.
